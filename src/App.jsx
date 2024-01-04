@@ -60,8 +60,7 @@ const App = () => {
   };
 
   return (
-    
-    <div className="min-h-screen flex items-center justify-center" style={{ backgroundImage: currentBackgroundImage , backgroundSize: 'cover', backgroundPosition: 'center' }}>
+     <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: currentBackgroundImage }}>
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-white drop-shadow-lg">Pomodoro Timer</h1>
         <div className="bg-white bg-opacity-0 backdrop-blur-md p-6 mt-8 rounded-lg ">
