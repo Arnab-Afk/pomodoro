@@ -1,0 +1,105 @@
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+.background-container {
+  min-height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  background-size: cover; /* Cover the full area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* No repeating the image */
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,Orbitron;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.background-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use viewport height to cover the full screen */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+html {
+  height: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  /* Use a high-quality background image */
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  /* Choose a modern font */
+  font-family: 'Inter', sans-serif;
+  color: #FFF; /* White color for the text */
+}
+
+.timer {
+  /* Style your timer to match the desired look */
+  font-size: 4rem;
+  color: #FFF; /* White color for the timer */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Optional: Adds a shadow to the timer text for better readability */
+}
+
+.buttons {
+  /* Style your buttons */
+}
+
+.button {
+  /* Individual button styles */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  color: #FFF;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* More opaque on hover */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .timer {
+    font-size: 3rem;
+  }
+  
+  .button {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.8rem;
+  }
+}
+/* The container that holds the background image */
