@@ -1,0 +1,10 @@
+char ch
+printf("\npress any key to continue");
+getch();
+
+printf("\nType of character");
+ch=getche();
+printf("\nType any character");
+getchar();
+printf("\nContinue Y/N");
+fgetchar();
