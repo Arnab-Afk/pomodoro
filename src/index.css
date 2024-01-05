@@ -1,7 +1,7 @@
-
 @tailwind base; 
 @tailwind components; 
 @tailwind utilities;
+
 .background-container {
   min-height: 100vh; /* Full viewport height */
   width: 100%; /* Full viewport width */
@@ -59,15 +59,17 @@ body {
 
 h1 {
   /* Choose a modern font */
-  font-family: 'Inter', sans-serif;
-  color: #FFF; /* White color for the text */
+  font-family: 'Orbitron';
+  color: #FFF;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* White color for the text */
 }
 
 .timer {
   /* Style your timer to match the desired look */
-  font-size: 4rem;
+  font-family: 'Orbitron';
+  font-size: 8rem;
   color: #FFF; /* White color for the timer */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Optional: Adds a shadow to the timer text for better readability */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Optional: Adds a shadow to the timer text for better readability */
 }
 
 .buttons {
