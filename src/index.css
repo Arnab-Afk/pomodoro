@@ -56,10 +56,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.headingp{
+  font-family: 'cinzel';
+}
 h1 {
   /* Choose a modern font */
-  font-family: 'Orbitron';
+  font-family: 'Cinzel';
   color: #FFF;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* White color for the text */
 }
@@ -104,4 +106,53 @@ h1 {
     font-size: 0.8rem;
   }
 }
-/* The container that holds the background image */
+.settings-button{
+  position: absolute;
+  right:1rem;
+  margin: 1rem;
+}
+.glassmorphism {
+  background: rgba(0, 0, 0, 0.1); /* Black background with opacity */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Light border for the glass effect */
+}
+
+.world-selector {
+  color: white;
+  text-align: center;
+}
+
+.worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.world {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.world.selected {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.world-name {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
