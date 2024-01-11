@@ -11,7 +11,7 @@ const SettingsModal = ({ isOpen, onClose, onThemeChange, themes, currentTheme })
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-50">
       <div className="p-8 rounded-lg shadow-lg space-y-4 glassmorphism">
         <h2 className="text-xl font-bold text-white">Pick your Ambient Mode world</h2>
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-5'>
