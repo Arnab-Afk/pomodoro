@@ -76,10 +76,7 @@ Title            </p>
                   alt=''
                   className='rounded-md duration-200 hover:scale-105'
                 />
-                <div className='flex items-center justify-center'>
-                  
-                 
-                </div>
+                
               </div>
             ))}
           </div>
